@@ -7,6 +7,7 @@ jobs:
     container:
       image: node:10.18.0-jessie
     steps:
+      - uses: hashicorp/setup-terraform@v2
       - name: log node version
         run: node -v
       - name: step with docker
